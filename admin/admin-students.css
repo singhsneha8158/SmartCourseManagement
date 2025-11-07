@@ -1,0 +1,3 @@
+/* admin-students.css */
+.student-row{display:flex;gap:10px;align-items:center;padding:10px;border-bottom:1px solid #f1f5f9}
+.student-row .name{font-weight:700}

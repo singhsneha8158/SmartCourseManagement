@@ -1,0 +1,3 @@
+/* admin/admin-courses.css */
+.course-row{display:flex;gap:10px;align-items:center;padding:8px;border-bottom:1px solid #f1f5f9}
+.course-row img{width:70px;height:50px;object-fit:cover;border-radius:6px}

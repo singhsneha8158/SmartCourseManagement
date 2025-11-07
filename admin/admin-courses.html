@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Manage Courses - Admin</title>
+  <link rel="stylesheet" href="../shared/shared.css">
+  <link rel="stylesheet" href="admin-courses.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container flex top">
+      <img src="../images/logo.png" class="logo">
+      <div><h3>Manage Courses</h3><div class="small">Add / Edit / Delete</div></div>
+      <nav class="nav">
+        <a class="btn" href="admin-dashboard.html">Dashboard</a>
+        <a class="btn" href="../client/courses.html">Client Courses</a>
+        <a class="btn" href="admin-students.html">Students</a>
+        <a class="btn" href="admin-messages.html">Messages</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h4>Add New Course</h4>
+      <form id="addCourseForm">
+        <input class="input" name="title" placeholder="Course title" required>
+        <input class="input" name="desc" placeholder="Short description" required>
+        <input class="input" name="price" placeholder="Price (0 for free)" type="number">
+        <input class="input" name="img" placeholder="Image path (../images/course1.jpg)" value="../images/course1.jpg">
+        <div class="flex"><button class="btn btn-primary" type="submit">Add Course</button><div id="addMsg" class="right small"></div></div>
+      </form>
+    </section>
+
+    <section class="card" style="margin-top:12px">
+      <h4>Existing Courses</h4>
+      <div id="coursesList"></div>
+    </section>
+  </main>
+
+  <footer class="footer">Admin • Smart Course Management</footer>
+
+  <script src="../shared/shared-storage.js"></script>
+  <script src="admin-courses.js"></script>
+</body>
+</html>
