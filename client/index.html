@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Home - Smart Course Management</title>
+  <link rel="icon" href="../images/favicon.ico">
+  <link rel="stylesheet" href="../shared/shared.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container flex top">
+      <img src="../images/logo.png" class="logo" alt="logo">
+      <div>
+        <h2 id="siteTitle">Smart Course Management</h2>
+        <div class="small">Learn anytime, anywhere</div>
+      </div>
+      <nav class="nav">
+        <a class="btn" href="index.html">Home</a>
+        <a class="btn" href="courses.html">Courses</a>
+        <a class="btn" href="enroll.html">Enroll</a>
+        <a class="btn" href="contact.html">Contact</a>
+        <a class="btn" href="../admin/admin-dashboard.html">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <div class="grid" style="grid-template-columns: 1fr 1fr; gap:20px; align-items:center">
+        <div>
+          <h1>Upskill with industry-ready courses</h1>
+          <p class="small">Interactive lessons, live projects and certificate on completion. Choose courses from web, programming, and more.</p>
+          <div class="flex">
+            <a class="btn btn-primary" href="courses.html">Browse Courses</a>
+            <a class="btn" href="enroll.html">Quick Enroll</a>
+          </div>
+        </div>
+        <div><img src="../images/hero.jpg" style="width:100%; border-radius:12px" alt="hero"></div>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:18px">
+      <h3>Popular Courses</h3>
+      <div id="popular" class="grid cols-3"></div>
+    </section>
+  </main>
+
+  <footer class="footer">©️ 2025 Smart Course Management</footer>
+
+  <script src="../shared/shared-storage.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

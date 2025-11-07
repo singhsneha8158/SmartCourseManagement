@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Enroll - Smart Course Management</title>
+  <link rel="stylesheet" href="../shared/shared.css">
+  <link rel="stylesheet" href="enroll.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container flex top">
+      <img src="../images/logo.png" class="logo">
+      <div><h3>Enroll</h3><div class="small">Register for a course</div></div>
+      <nav class="nav">
+        <a class="btn" href="index.html">Home</a>
+        <a class="btn" href="courses.html">Courses</a>
+        <a class="btn btn-primary" href="enroll.html">Enroll</a>
+        <a class="btn" href="../admin/admin-dashboard.html">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h4>Enrollment Form</h4>
+      <form id="enrollForm">
+        <input class="input" name="name" placeholder="Full name" required>
+        <input class="input" name="email" placeholder="Email" type="email" required>
+        <select class="input" name="course" required></select>
+        <div class="flex">
+          <button class="btn btn-primary" type="submit">Submit</button>
+          <button type="button" class="btn" id="clear">Clear All</button>
+          <div class="right small" id="status"></div>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">©️ 2025 Smart Course Management</footer>
+
+  <script src="../shared/shared-storage.js"></script>
+  <script src="enroll.js"></script>
+</body>
+</html>
